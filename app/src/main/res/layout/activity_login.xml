@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff">
+
+    <ImageView
+        android:id="@+id/im"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/logo"></ImageView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/im"
+        android:background="#ffff">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="235dp"
+
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border"
+            android:hint="UserName "
+
+            android:inputType="text"
+            android:maxLines="1"
+
+            android:padding="15dp"
+            android:shadowRadius="15" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/password"
+            android:layout_width="235dp"
+            android:layout_height="59dp"
+            android:layout_alignLeft="@+id/username"
+            android:layout_alignStart="@+id/username"
+            android:layout_below="@+id/username"
+            android:alpha="225"
+            app:passwordToggleDrawable="@drawable/icon"
+            app:passwordToggleEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="235dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:background="@drawable/border"
+                android:hint="Password "
+                android:inputType="textPassword"
+                android:maxLines="1"
+
+                android:padding="15dp" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            android:layout_below="@+id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/button"
+            android:text="Login"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/forg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:text="Forget password?"
+            android:textColor="#0A0A0A"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/forg"
+            android:text="Need Account"
+            android:textColor="#0A0A0A"
+            android:textSize="18dp" />
+
+
+        <!--<Button-->
+        <!--android:id="@+id/button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginLeft="23dp"-->
+        <!--android:layout_marginStart="23dp"-->
+        <!--android:layout_toEndOf="@+id/login"-->
+        <!--android:layout_toRightOf="@+id/login"-->
+        <!--android:onClick="Action"-->
+        <!--android:text="Sign up" />-->
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

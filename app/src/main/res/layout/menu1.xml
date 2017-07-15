@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="#000">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/con1"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/border"
+                    android:hint="Contact no."
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:paddingLeft="15dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/con1"
+                    android:text="verify" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card1"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:id="@+id/re2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+
+                    android:layout_marginTop="20dp"
+                    android:text="Patient name"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/pname"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/name"
+                    android:background="@drawable/border"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+
+                    android:layout_marginTop="80dp"
+                    android:text="Patient age"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/page"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_toRightOf="@+id/age"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3"
+                    android:maxLines="1"
+                    android:paddingLeft="15dp" />
+
+                <TextView
+                    android:id="@+id/gen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/age"
+                    android:text="Gender"
+                    android:textSize="25sp" />
+
+                <RadioGroup
+                    android:id="@+id/radioSex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/age"
+                    android:layout_marginTop="30dp">
+
+
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+
+                        android:text="Male" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/checkBox"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:text="Female" />
+
+
+                </RadioGroup>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card2"
+            android:visibility="visible"
+            android:layout_marginTop="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/clinic"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+
+                    android:layout_marginTop="20dp"
+                    android:text="Clinic Name"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/pclinic"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/clinic"
+                    android:background="@drawable/border"
+                    android:maxLines="1"
+                    android:paddingLeft="15dp" />
+
+                <TextView
+                    android:id="@+id/ward"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+
+                    android:layout_marginTop="80dp"
+                    android:text="Patient Ward no."
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/pward"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_toRightOf="@+id/ward"
+                    android:background="@drawable/border"
+                    android:maxLines="1"
+                    android:paddingLeft="15dp" />
+
+                <TextView
+                    android:id="@+id/bed"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+
+                    android:layout_marginTop="140dp"
+                    android:text="Patient Bed No."
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/pbed"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="140dp"
+                    android:layout_toRightOf="@+id/bed"
+                    android:background="@drawable/border"
+                    android:maxLines="1" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/card3">
+
+            <Button
+                android:id="@+id/submit"
+
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/button"
+                android:text="Submit" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<group android:checkableBehavior="single">-->
+        <!--<item-->
+            <!--android:id="@+id/nav_camera"-->
+            <!--android:icon="@drawable/ic_menu_camera"-->
+            <!--android:title="Import" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_gallery"-->
+            <!--android:icon="@drawable/ic_menu_gallery"-->
+            <!--android:title="Gallery" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_slideshow"-->
+            <!--android:icon="@drawable/ic_menu_slideshow"-->
+            <!--android:title="Slideshow" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_manage"-->
+            <!--android:icon="@drawable/ic_menu_manage"-->
+            <!--android:title="Tools" />-->
+    <!--</group>-->
+
+    <item android:title="New">
+        <menu>
+            <item
+                android:id="@+id/old"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Old" />
+            <item
+                android:id="@+id/ward"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Ward" />
+        </menu>
+    </item>
+
+    <item android:title="Quick preference">
+        <menu>
+            <item
+                android:id="@+id/p1"
+                android:icon="@drawable/ic_menu_share"
+                android:title="New" />
+            <item
+                android:id="@+id/p2"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Old" />
+        </menu>
+    </item>
+
+    <item android:title="Contact">
+        <menu>
+            <item
+                android:id="@+id/con"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Call" />
+            <item
+                android:id="@+id/mail"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Mail" />
+        </menu>
+    </item>
+
+</menu>
